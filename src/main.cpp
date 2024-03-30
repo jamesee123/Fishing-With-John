@@ -1,5 +1,6 @@
 #include "headers.hpp"
 
-void sayTesting() {
+int main() {
     cout<<"testing";
+    hello();
 }

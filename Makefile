@@ -1,11 +1,8 @@
-FLAGS = -std=c++20 -Wall
+FLAGS = -std=c++20
 INCLUDES = -Iheaders
 
 SRCS := $(wildcard src/*.cpp)
 OBJS := $(SRCS:src/%.cpp=builds/%.o)
 
-build: $(OBJS)
-
-builds/%.o: src/%.cpp
-	g++ $(FLAGS) $(INCLUDES) -c $< -o $@
-	g++ -o builds/main.o $(OBJS)
+build:
+	g++ $(FLAGS) $(INCLUDES) $(SRCS) -o builds/build.exe
