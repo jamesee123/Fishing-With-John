@@ -2,3 +2,4 @@
 builds/*.o
 builds/*.exe
 headers/*.gch
+*.DS_Store
