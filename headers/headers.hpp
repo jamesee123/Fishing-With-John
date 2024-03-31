@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <cstdint>
 #include <vector>
+#include <bitset>
 
 using std::cout;
 using std::cin;
