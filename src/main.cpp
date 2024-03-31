@@ -2,9 +2,7 @@
 
 int main()
 {
-    const int screenWidth = 800;
-    const int screenHeight = 450;
-    InitWindow(screenWidth, screenHeight, "Draw Square Example");
+    InitWindow(width * pixelSize, height * pixelSize, "Draw Square Example");
 
     SetTargetFPS(60);
 

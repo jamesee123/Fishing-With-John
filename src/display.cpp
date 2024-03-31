@@ -1,12 +1,19 @@
 #include "headers.hpp"
 
+/*
+Pixel Group:
+3 r (4)
+3 g (4)
+3 b (4)
+1 color value = 36 brightness
+1 transparency
+6 repeats
+*/
+
 void DrawRendered(vector<pixelLine> screen)
 {
     BeginDrawing();
-    ClearBackground(RAYWHITE);
-
-        // Draw a white square at position (200, 200) with size 100x100
-    DrawRectangle(200, 200, 100, 100, WHITE);
-
+    ClearBackground(BLACK);
+    DrawRectangle(0, 0, pixelSize, pixelSize, RED);
     EndDrawing();
 }
